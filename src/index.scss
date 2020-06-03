@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: local('ProximaNova-Bold'), url(./Assets/FontsFree-Net-Proxima-Nova-Bold.otf) format('truetype');
+}
+@font-face {
+  font-family: 'Rajdhani-SemiBold';
+  src: local('Rajdhani-SemiBold'), url(./Assets/Rajdhani-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rajdhani-Bold';
+  src: local('Rajdhani-Bold'), url(./Assets/Rajdhani-Bold.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+#root {
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  text-align: -webkit-center;
+}

@@ -1,0 +1,37 @@
+.tabs {
+    width: 20%;
+    display: inline-block;
+    color: #999999;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+    font-family: 'Rajdhani-SemiBold';
+    cursor: pointer;
+}
+  
+.tabs:hover {
+    border-bottom: 2px solid rgb(85,168,254);
+    color: rgb(85,168,254);
+}
+
+.active {
+    border-bottom: 2px solid rgb(85,168,254);
+    color: rgb(85,168,254);
+}
+
+.tab-info-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    p {
+        margin: 0;
+        font-size: 1em;
+    }
+}
+
+.tab-image {
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+}

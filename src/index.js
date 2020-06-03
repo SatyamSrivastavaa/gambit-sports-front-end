@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+// styles
+import './Assets/FontsFree-Net-Proxima-Nova-Bold.otf'
+import './index.scss';
+
+// Components
 import App from './App';
 
 ReactDOM.render(

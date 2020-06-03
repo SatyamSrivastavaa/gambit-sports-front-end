@@ -1,0 +1,82 @@
+.challenges-list {
+    width: 100%;
+}
+
+.challenge {
+    width: 100%;
+    height: 9em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 0 0 1em 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
+    padding: 1em;
+    box-sizing: border-box;
+
+    p {
+        margin: 0;
+    }
+}
+
+.challenge-header {
+    color: #2370B6;
+    font-family: 'Rajdhani-SemiBold';
+    margin: 0;
+}
+
+.teams-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    height: 60%;
+    margin-bottom: 10px;
+}
+
+.team {
+    height: 60%;
+    flex-basis: 35px;
+    margin: 0 1em;
+}
+
+.party-names-container {
+    flex: 3;
+    text-align: center;
+}
+
+.teams {
+    font-family: 'ProximaNova-Bold';
+    color: #666666;
+    font-size: 1em;
+}
+
+.challenge-meta-info {
+    font-family: 'Rajdhani-SemiBold';
+    color: #999999;
+    font-size: 1em;
+}
+
+.live {
+    width: 10px;
+    margin: 0 1em;
+}
+
+.challenge-info {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 1em;
+        height: 1em;
+        margin-right: 4px;
+    }
+
+    .meta-info {
+        display: flex;
+    }
+    
+    .price {
+        color: #47C868;
+        font-family: 'ProximaNova-Bold';
+    }
+}

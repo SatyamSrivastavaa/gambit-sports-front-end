@@ -1,0 +1,10 @@
+.tab-bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40px;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: left;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+}
