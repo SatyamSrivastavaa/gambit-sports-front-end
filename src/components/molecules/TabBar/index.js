@@ -27,6 +27,7 @@ const TabBar = ({tabs, active, setActiveTab}) => {
 
         return  (
             <Tab 
+                key={name}
                 name={name}
                 imgUrl={imgUrl}
                 onClick={filterData}

@@ -1,6 +1,10 @@
 @font-face {
   font-family: 'ProximaNova-Bold';
-  src: local('ProximaNova-Bold'), url(./Assets/FontsFree-Net-Proxima-Nova-Bold.otf) format('truetype');
+  src: local('ProximaNova-Bold'), url(./Assets/Proxima-Nova-Bold.otf) format('truetype');
+}
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: local('ProximaNova-Semibold'), url(./Assets/Proxima-Nova-Sbold.otf) format('truetype');
 }
 @font-face {
   font-family: 'Rajdhani-SemiBold';
@@ -30,4 +34,10 @@ body {
   height: 100%;
   text-align: center;
   text-align: -webkit-center;
+}
+
+@media only screen and (max-width: 600px) {
+  #root {
+    width: 100%;
+  }
 }

@@ -1,3 +1,5 @@
+@import "../../../_globalStyles";
+
 .header-container{
     position: -webkit-sticky;
     position: sticky;
@@ -6,10 +8,10 @@
     background-image: url('../../../Assets/sticky_bar.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    color: $white;
     height: 40px;
     background-position: center;
-    font-family: 'ProximaNova-Bold';
+    font-family: $ProximaNovaBold;
     font-size: 14px;
     padding: 15px 40px;
 
@@ -23,18 +25,25 @@
             margin: 0;
         }
         .sub-text {
-            font-family: 'Rajdhani-SemiBold';
+            font-family: $RajdhaniSemiBold;
         }
     }
     
     .back {
         position: fixed;
-        top: 5%;
+        top: 4%;
         left: 31%;
         z-index: 99;
         width: 1em;
         height: 1.2em;
         cursor: pointer;
     }
+
+    @media only screen and (max-width: 600px) {
+        .back {
+            top: 6%;
+            left: 5%;
+        }
+      }
 }
 

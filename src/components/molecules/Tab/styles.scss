@@ -1,20 +1,25 @@
+@import "../../../_globalStyles";
+
 .tabs {
     width: 20%;
     display: inline-block;
-    color: #999999;
+    color: $lightGray;
     text-align: center;
     margin: 5px;
     text-decoration: none;
-    font-family: 'Rajdhani-SemiBold';
+    font-family: $RajdhaniSemiBold;
+    box-sizing: border-box;
     cursor: pointer;
 }
   
 .tabs:hover {
+    font-family: $RajdhaniBold;
     border-bottom: 2px solid rgb(85,168,254);
     color: rgb(85,168,254);
 }
 
 .active {
+    font-family: $RajdhaniBold;
     border-bottom: 2px solid rgb(85,168,254);
     color: rgb(85,168,254);
 }
@@ -25,7 +30,7 @@
     text-align: center;
 
     p {
-        margin: 0;
+        margin: 5px 0 0 0;
         font-size: 1em;
     }
 }

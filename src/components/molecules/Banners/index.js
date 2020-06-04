@@ -9,9 +9,9 @@ import Banner from '../../atoms/Banner'
 const Banners = ({ banners, history }) => {
     return (
         <div className="banner-container">
-            <Carousel autoPlay={5000} >
+            <Carousel autoPlay={5000} infinite >
                 {
-                    banners.map(banner => <Banner banner={ banner } history={history} />)
+                    banners.map((banner, index) => <Banner key={index} banner={ banner } history={history} />)
                 }
             </Carousel>
         </div>

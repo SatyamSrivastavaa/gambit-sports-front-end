@@ -1,10 +1,12 @@
+@import "../../../_globalStyles";
+
 .tab-bar {
     position: -webkit-sticky;
     position: sticky;
-    top: 40px;
+    top: 70px;
     overflow: auto;
     white-space: nowrap;
     text-align: left;
-    background: #FFFFFF;
+    background: $white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
 }

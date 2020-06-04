@@ -1,23 +1,38 @@
+@import "../../../_globalStyles";
+
 .contests-container {
     width: 100%;
-    padding: 0 1em;
-    background-color: #eeeeee;
+    padding: 1em 1em;
+    background-color: $offWhite;
     text-align: left;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-.contests-header {
-    padding: 1em 0;
-    margin: 0;
-    font-family: 'ProximaNova-Bold';
-    font-size: 1em;
-    color: #666666;
-}
-
 .no-contests {
-    font-family: 'ProximaNova-Bold';
+    font-family: $ProximaNovaBold;
     font-size: 1em;
-    color: #111;
+    color: $lightBlack;
 }
 
+.contest-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        margin: 0;
+    }
+
+    .contests-header {
+        margin: 0;
+        font-family: $ProximaNovaBold;
+        font-size: 13px;
+        color: $reddishBlack;
+    }
+
+    .contest-sub-header {
+        font-family: $RajdhaniSemiBold;
+        font-size: 12px;
+        color: $lightGray;
+    }
+}

@@ -17,7 +17,7 @@ const Challenges = ({ challenges, active, activeTabId }) => {
             <p className="challenges-header">{`${active} (${filteredChallenges.length})`}</p>
             {
                 filteredChallenges.length > 0
-                    ? filteredChallenges.map(challenge => <Challenge challenge={challenge} />)
+                    ? filteredChallenges.map((challenge, index) => <Challenge key={index} challenge={challenge} />)
                     : <p className="no-challenges">No Active Challenges.</p>
             } 
         </div>

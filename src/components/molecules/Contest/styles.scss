@@ -1,0 +1,112 @@
+@import "../../../_globalStyles";
+
+.contest-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 9em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
+    box-sizing: border-box;
+    margin-top: 1em;
+    background-color: $white;
+    overflow: hidden;
+
+    .contest-info {
+        flex: 5;
+        padding: 15px 15px;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin: 0;
+        }
+
+        .contest-description-wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .contest-description {
+                font-family: $ProximaNovaBold;
+                color: $reddishBlack;
+                font-size: 14px;
+            }
+    
+            .contest-type-wrapper {
+                img {
+                    width: 14px;
+                    height: 14px;
+                    margin-left: 9px;
+                }
+            }
+        }
+
+        .meta-info {
+            font-family: $RajdhaniSemiBold;
+            font-size: 11px;
+            color: $lightGray;
+
+            .meta-info-text {
+                margin: 0 12px 0 5px;
+                cursor: pointer;
+            }
+        }
+
+        .entry-info-wrapper {
+            padding-top: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                margin: 0;
+                cursor: pointer;
+            }
+
+            .prize-info {
+                display: flex;
+                flex-direction: column;
+
+                .arrow {
+                    width:4px;
+                    height: 8px;
+                    margin-left: 4px;
+                }
+            }
+
+            .entry-info-header {
+                font-family: $RajdhaniSemiBold;
+                font-size: 11px;
+                color: $seaGreen;
+            }
+
+            .entry-info-money {
+                font-family: $RajdhaniBold;
+                font-size: 16px;
+                color: $seaGreen;
+            }
+
+            .entry-header {
+                color: $lightGray;
+            }
+
+            .entry-money {
+                color: $reddishBlack;
+            }
+        }
+    }
+
+    .rooms-info {
+        flex: 1;
+        background-color: $reddishWhite;
+        box-sizing: border-box;
+        padding: 5px 15px;
+
+        p, span {
+            margin: 0;
+            color: $lightGray;
+            font-family: $RajdhaniSemiBold;
+            font-size: 11px;
+        }
+    }
+}

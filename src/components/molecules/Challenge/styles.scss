@@ -1,3 +1,5 @@
+@import "../../../_globalStyles";
+
 .challenges-list {
     width: 100%;
 }
@@ -5,7 +7,7 @@
 .challenge {
     width: 100%;
     height: 9em;
-    background-color: #ffffff;
+    background-color: $white;
     border-radius: 8px;
     margin: 0 0 1em 0;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
@@ -19,7 +21,7 @@
 
 .challenge-header {
     color: #2370B6;
-    font-family: 'Rajdhani-SemiBold';
+    font-family: $RajdhaniSemiBold;
     margin: 0;
 }
 
@@ -27,7 +29,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F7F7F7;
+    background-color: $reddishWhite;
     border-radius: 8px;
     height: 60%;
     margin-bottom: 10px;
@@ -45,14 +47,14 @@
 }
 
 .teams {
-    font-family: 'ProximaNova-Bold';
-    color: #666666;
+    font-family: $RajdhaniBold;
+    color: $reddishBlack;
     font-size: 1em;
 }
 
 .challenge-meta-info {
-    font-family: 'Rajdhani-SemiBold';
-    color: #999999;
+    font-family: $RajdhaniSemiBold;
+    color: $lightGray;
     font-size: 1em;
 }
 
@@ -76,7 +78,7 @@
     }
     
     .price {
-        color: #47C868;
-        font-family: 'ProximaNova-Bold';
+        color: $lightGreen;
+        font-family: $RajdhaniBold;
     }
 }

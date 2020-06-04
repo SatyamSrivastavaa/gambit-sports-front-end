@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // styles
-import './Assets/FontsFree-Net-Proxima-Nova-Bold.otf'
 import './index.scss';
 
 // Components

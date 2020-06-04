@@ -9,8 +9,8 @@ import store from './redux/store';
 // Components
 import Home from './components/organisms/Home';
 import Contests from './components/organisms/Contests';
-import Transactions from './components/organisms/Transactions';
-import { NotFound } from './components/atoms/404';
+import Wallet from './components/organisms/Wallet';
+import NotFound from './components/molecules/NotFound';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Switch>
           <Route exact path='/home' component={Home}/>
           <Route exact path='/contest' component={Contests}/>
-          <Route exact path='/wallet' component={Transactions}/>
+          <Route exact path='/wallet' component={Wallet}/>
           <Route component={NotFound}/>
         </Switch>
       </BrowserRouter>

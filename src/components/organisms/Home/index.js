@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { get } from 'lodash';
-import './styles.scss';
  
 // Redux
 import { getHomePageDetails } from '../../../redux/actions/landing';

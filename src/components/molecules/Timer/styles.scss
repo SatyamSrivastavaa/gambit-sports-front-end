@@ -1,4 +1,6 @@
+@import "../../../_globalStyles";
+
 .time-remaining {
-    color: #999999;
-    font-family: 'Rajdhani-SemiBold';
+    color: $lightGray;
+    font-family: $RajdhaniSemiBold;
 }

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { get } from 'lodash';
 import { connect } from 'react-redux';
 import './styles.scss';
 
@@ -10,7 +9,9 @@ import { setActiveTab } from '../../../redux/actions/tabs';
 import Tab from '../Tab';
 
 const ContestTabs = ({tabs, active, setActiveTab}) => {
-    const set = {};
+    const set = {
+        'All': tabs.length
+    };
     
     tabs.forEach(tab => {
         if(!set[tab.contest_type]){
@@ -22,10 +23,7 @@ const ContestTabs = ({tabs, active, setActiveTab}) => {
 
 
     useEffect(() => {
-        const name = get(tabs[0], 'contest_type', '');
-        const tabId = get(tabs[0], 'contest_type', '');
-
-        setActiveTab(name, tabId);
+        setActiveTab('All', 'All');
     }, [tabs]);
 
     const renderTab = (tab, index) => {
@@ -35,6 +33,7 @@ const ContestTabs = ({tabs, active, setActiveTab}) => {
 
         return  (
             <Tab 
+                key={tab}
                 name={tab}
                 subText={` (${set[tab]})`}
                 onClick={filterData}
@@ -47,7 +46,7 @@ const ContestTabs = ({tabs, active, setActiveTab}) => {
     return (
         <div className="tab-bar">
             {
-                Object.keys(set).map((tab, index) => renderTab(tab))
+                Object.keys(set).map(tab => renderTab(tab))
             }
         </div>
     )
